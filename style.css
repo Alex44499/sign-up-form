@@ -1,0 +1,43 @@
+/* Resetting some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main container styling */
+.main_container_form {
+  height: 100vh;
+}
+
+/* Sidebar styling */
+.sidebar_form {
+  position: relative;
+  height: 100%;
+  width: 40%;
+  background-color: #ebeae8;
+  background-image: url("sign_up_bg.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 20px 20px 400px #ccc; /* Consider reducing the blur radius */
+}
+
+/* Odin logo styling */
+.odin_logo {
+  background-image: url(samurai_logo.png);
+  height: 25%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: rgba(114, 110, 109, 0.12); /* Added some transparency */
+  backdrop-filter: blur(10px); /* Adjust the blur radius */
+  position: relative;
+  top: 15%;
+  box-shadow: 20px 20px 40px #ccc; /* Consider reducing the blur radius */
+}
+
+/* Main content form styling */
+.main_content_form {
+  /* Add your styles here */
+}
