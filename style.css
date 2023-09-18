@@ -8,6 +8,7 @@
 /* Main container styling */
 .main_container_form {
   height: 100vh;
+  display: flex;
 }
 
 /* Sidebar styling */
@@ -17,9 +18,6 @@
   width: 40%;
   background-color: #ebeae8;
   background-image: url("sign_up_bg.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
   box-shadow: 20px 20px 400px #ccc; /* Consider reducing the blur radius */
 }
 
@@ -27,9 +25,6 @@
 .odin_logo {
   background-image: url(samurai_logo.png);
   height: 25%;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
   background-color: rgba(114, 110, 109, 0.12); /* Added some transparency */
   backdrop-filter: blur(10px); /* Adjust the blur radius */
   position: relative;
@@ -37,7 +32,50 @@
   box-shadow: 20px 20px 40px #ccc; /* Consider reducing the blur radius */
 }
 
+.odin_logo,
+.sidebar_form {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
 /* Main content form styling */
-.main_content_form {
-  /* Add your styles here */
+.sign_up_form {
+  width: 60%;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+}
+
+.disclaimer_form {
+  margin: 10% 0% 3% 10%;
+  font-family: "Caveat", cursive;
+  font-size: 2.6em;
+}
+
+.disclaimer_form p:nth-child(2) {
+  margin-top: 3%;
+}
+
+legend {
+  margin: 0% 0% 2% 10%;
+}
+
+form {
+  display: flex;
+  /* margin-left: 10%; */
+  background-color: aliceblue;
+  padding: 5% 10% 5% 10%;
+  justify-content: center;
+}
+
+label,
+input {
+  display: flex;
+  padding: 10px 0px 0px 0px;
+  margin-bottom: 5%;
+}
+
+.form_section_first_column {
+  margin-right: 10%;
 }
