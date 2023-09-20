@@ -1,81 +1,104 @@
-/* Resetting some default browser styles */
+/* Global Resets */
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
 }
 
-/* Main container styling */
+/* Main Layout */
 .main_container_form {
   height: 100vh;
-  display: flex;
+  display: flex; /* Flexbox for layout */
 }
 
-/* Sidebar styling */
+/* Sidebar Styles */
 .sidebar_form {
   position: relative;
   height: 100%;
   width: 40%;
   background-color: #ebeae8;
   background-image: url("sign_up_bg.jpg");
-  box-shadow: 20px 20px 400px #ccc; /* Consider reducing the blur radius */
+  box-shadow: 20px 20px 400px #ccc; /* Shadow for depth */
 }
 
-/* Odin logo styling */
+/* Logo Styles */
 .odin_logo {
   background-image: url(samurai_logo.png);
   height: 25%;
-  background-color: rgba(114, 110, 109, 0.12); /* Added some transparency */
-  backdrop-filter: blur(10px); /* Adjust the blur radius */
+  background-color: rgba(114, 110, 109, 0.12);
+  backdrop-filter: blur(10px);
   position: relative;
   top: 15%;
-  box-shadow: 20px 20px 40px #ccc; /* Consider reducing the blur radius */
+  box-shadow: 20px 20px 40px #ccc;
 }
 
-.odin_logo,
-.sidebar_form {
+/* Sidebar and Logo Shared Styles */
+.odin_logo, .sidebar_form {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
 }
 
-/* Main content form styling */
+/* Main Form Container */
 .sign_up_form {
   width: 60%;
-  /* background-color: red; */
-  display: flex;
-  flex-direction: column;
 }
 
+/* Disclaimer Text */
 .disclaimer_form {
-  margin: 10% 0% 3% 10%;
+  margin: 10% 0 3% 10%;
   font-family: "Caveat", cursive;
   font-size: 2.6em;
 }
 
-.disclaimer_form p:nth-child(2) {
-  margin-top: 3%;
-}
-
+/* Legend Styles */
 legend {
-  margin: 0% 0% 2% 10%;
+  padding: 0 0 0 10%;
+  background-color: aliceblue;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: xx-large;
 }
 
+/* Form Layout */
 form {
   display: flex;
-  /* margin-left: 10%; */
+  padding: 0 0 0 10%;
   background-color: aliceblue;
-  padding: 5% 10% 5% 10%;
-  justify-content: center;
+  justify-content: space-between; /* Evenly distribute columns */
 }
 
-label,
-input {
+/* Label and Input Shared Styles */
+label, input {
   display: flex;
-  padding: 10px 0px 0px 0px;
-  margin-bottom: 5%;
+  border-radius: 4px;
+  margin-bottom: 2%; /* Reduced space between label and input */
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: bolder;
 }
 
-.form_section_first_column {
-  margin-right: 10%;
+/* Column Styles */
+.form_section_first_column, .form_section_second_column {
+  flex: 1; /* Equal width for both columns */
+}
+
+/* Input Field Styles */
+input {
+  width: 60%; /* Full-width input fields */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Submit Button Styles */
+.button_submit {
+  padding: 10px 50px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: "Caveat", cursive;
+  font-size: 1.5em;
+  margin-top: 10%;
 }
